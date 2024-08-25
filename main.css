@@ -1,0 +1,54 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      width: 100%;
+      height: 100vh;
+      background-image: url(./images/mockup-photos-5nUNdLueQio-unsplash\ \(1\).jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.window{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.win{
+      width: 400px;
+      height: 500px;
+      display: flex;
+      box-sizing: border-box;
+      border: 10px solid white;
+      background-image: url(./images/lotus-design-n-print-WgkA3CSFrjc-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.letf{
+      width: 200px;
+      height: 480px;
+      background-color: rgba(0, 0, 0, 0.178);
+      background-position: left;
+      border: 5px solid rgb(130, 100, 0);
+      transform-origin: left center;
+      transition: 0.5s;
+}
+.right{
+      width: 200px;
+      height: 480px;
+      background-color: rgba(0, 0, 0, 0.192);
+      background-position: right;
+      border: 5px solid rgb(130, 100, 0);
+      transform-origin: right center;
+      transition: 0.5s;
+
+}
+.win:hover .letf{
+      transform: perspective(2000px) rotateY(-160deg);
+}
+.win:hover .right{
+      transform: perspective(2000px) rotateY(160deg);
+}
